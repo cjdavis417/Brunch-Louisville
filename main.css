@@ -1,0 +1,135 @@
+/* Body Header styles */
+h1 {
+    display: inline-block;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.fluer {
+    height: 75px;
+}
+
+.header > * {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.headerBackground {
+    background-color: #010066; /*  official kentucky blue color  */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*  main Styles  */
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    background-image: url("img/100px_background.jpg");
+    background-repeat: repeat;
+    padding: 10px;
+}
+
+article {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-bottom: black solid 3px;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.first {
+    width: 300px;
+    float: left;
+}
+
+.last {
+    width: 250px;
+    float: right;
+}
+
+.middle {
+    /*overflow: hidden;*/
+    margin: 0 auto;
+    
+}
+
+th {
+    text-align: right;
+}
+
+td {
+    padding-left: 5px;
+}
+
+tr:hover {
+    background-color: #d2e0ff;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.hours {
+    margin-top: 10px;
+}
+
+.hoursHeader {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 21px;
+}
+
+.storeHeader {
+    height: 150px;
+    overflow: hidden;
+}
+
+.storeImg {
+    height: 125px;
+}
+
+.storeImgWrapper {
+    float: left;
+}
+
+.storeTxtWrapper {
+    overflow: hidden;
+}
+
+.storeTxt {
+    margin-right: 10px;
+    text-align: right;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*  footer styles  */
+
+footer {
+    height: 200px;
+    background-color: #010066; /*  official kentucky blue color  */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerText {
+    vertical-align: middle;
+}
+
+.emailLink {
+    color: white;
+}
+
