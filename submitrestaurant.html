@@ -1,0 +1,96 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Restaurant Submission</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headerBackground">
+            <div class="header">
+                    <img class="fluer" src="img/Fleur.png">
+                    <h1 class="mainheader">Louisville Brunch and Buffet</h1>
+                    <img class="fluer" src="img/Fleur.png">
+            </div>
+        </div>
+        <div class="navbar">
+            <div><a href="index.html" class="headerlinks">Home</a></div>
+            </div>
+    </header>
+
+    <main>
+<form action="submitrestaurant.html" method="post">
+    <h2 class="formheader">Add Your Restaurant</h2>
+
+    <fieldset>
+
+        <legend><span class="number">1</span> Your Info</legend>
+
+        <label for="name">Submitter Name</label>
+        <input type="text" id="name" name="submitter_name">
+
+        <label>Job Title</label>
+        <input type="radio" id="owner" value="owner" name="job_title"><label for="owner" class="light">Owner</label><br>
+        <input type="radio" id="manager" value="manager" name="job_title"><label for="manager" class="light">Manager</label><br>
+        <input type="radio" id="other" value="other" name="job_title"><label for="other" class="light">Other</label>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend><span class="number">2</span> Restaurant Info</legend>
+
+        <label for="restaurant">Name of Restaurant</label>
+        <input type="text" id="restaurant" name "restaurant_name">
+    
+        <label for="bizAddress">Restaurant Address</label>
+        <textarea id="bizAddress" name="business_address"></textarea>
+    
+        <label for="bizTel">Restaurant Telephone Number</label>
+        <input type="tel" id="bizTel" name="business_tel">
+    
+        <label for="bizHours">Hours of Business</label>
+        <textarea id="bizHours" name="business_hours"></textarea>
+    </fieldset>
+
+    <fieldset>
+
+        <legend><span class="number">3</span> Buffet Information</legend>
+
+        <label for="bufHours">Buffet Hours</label>
+        <textarea id="bufHours" name="buffet_hours"></textarea>
+    
+        <label for="bufSpecials">Buffet Specials</label>
+        <textarea id="bufSpecials" name="buffet_specials"></textarea>
+    </fieldset>
+
+    <fieldset>
+
+        <legend><span class="number">4</span> Logo</legend>
+
+            <label for="bizLogo">Restaurant Logo</label>
+            <input type="file" id="bizLogo" name="business_logo">
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <div class="footerText"><a class="emailLink" href="mailto:christopherjdavis417@gmail.com">Contact us</a><br>
+                &copy 2018 MonkeyFace, LLC<br>
+            Last Updated: January 7, 2018<br>
+            </div>
+        </div> 
+    </footer>
+
+
+</body>
+</html>
