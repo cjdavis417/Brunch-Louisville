@@ -4,13 +4,12 @@
     box-sizing: border-box;
   }
 
-/* Body Header styles */
 h1 {
     display: inline-block;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .fluer {
@@ -51,6 +50,7 @@ a.headerlinks:visited {
 body {
     width: 800px;
     margin: 0 auto;
+    background-image: url(img/wood-texture1.jpg)
 }
 
 main {
@@ -136,8 +136,6 @@ tr:hover {
 h2 {
     font-family: 'Times New Roman', Times, serif;
 }
-
-/*  footer styles  */
 
 footer {
     height: 200px;

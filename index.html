@@ -4,6 +4,7 @@
 <head>
     <title>Louisville Brunch and Buffet</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="device-breakpoints.css">
 </head>
 
 <!-- Begins Body -->
@@ -18,16 +19,16 @@
     </div>
     <div class="navbar">
         <p><a href="submitrestaurant.html" class="headerlinks">Submit your Restaurant!</a></p>
-        </div>
+     </div>
 </header>
-<main>
+<main itemscope itemtype="http://schema.org/Restaurant">
 <article>
     <div class="storeheader">
-        <div class="storeImgWrapper"><img class="storeImg" src="img/logo-ramsis.png"></div>
+        <div class="storeImgWrapper"><img itemprop="logo" alt="Ramsi's Logo" class="storeImg" src="img/logo-ramsis.png"></div>
         <div class="storeTxtWrapper">
             <div class="storeTxt">
-                    <h2><a href="http://www.ramsiscafe.com">Ramsi's Cafe on the World</a></h2>
-                    <address>1293 Bardstown Road<br>
+                    <h2><span itemprop="name"><a href="http://www.ramsiscafe.com">Ramsi's Cafe on the World</a></span></h2>
+                    <address itemprop="address">1293 Bardstown Road<br>
                             Louisville, <abbr title="Kentucky">KY</abbr> 40204
                         </address>
                         <a href="tel:1-502-451-0700">502-451-0700</a>
