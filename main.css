@@ -170,42 +170,10 @@ label {
     margin-bottom: 8px;
   }
 
-  label.light {
+label.light {
     font-weight: 300;
     display: inline;
   }
-
-  input[type="text"],
-  input[type="password"],
-  input[type="date"],
-  input[type="datetime"],
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="time"],
-  input[type="url"],
-  textarea,
-  select {
-    background: rgb(187, 187, 187);
-    border: none;
-    font-size: 16px;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: #e8eeef;
-    color: #8a97a0;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-    border-radius: 5px;
-  }
-
-  input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
 
 .inputElement {
     margin-bottom: 30px;
@@ -255,6 +223,28 @@ button {
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 100%;
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+      background-color: #ccc;
+  }
+
+  .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
   }
 
   @media screen and (min-width: 480px) {
