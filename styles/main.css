@@ -87,7 +87,7 @@ article {
 }
 
 th {
-    text-align: right;
+    text-align: right; /* test */
 }
 
 td {
