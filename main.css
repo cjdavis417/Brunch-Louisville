@@ -179,18 +179,37 @@ label.light {
     margin-bottom: 30px;
 }
 
+table {
+    color: #010066;
+}
+
 button {
     padding: 15px 35px;
-    color: #FFF;
-    background-color: #010066;
+    background-color: #eee;
+    color: #010066;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 5px;
     width: 100%;
-    border: 0px solid #ff0202;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    border: 2px solid #010066;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .button_address {
+      font-size: 18px;
+  }
+
+  .accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+      background-color: #ccc;
   }
 
   .submitLogo {
@@ -223,22 +242,6 @@ button {
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 100%;
-  }
-
-  .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-
-  .active, .accordion:hover {
-      background-color: #ccc;
   }
 
   .panel {

@@ -12,6 +12,6 @@ if (navigator.sayswho == 'Safari'){
 }else{
     alert('not running safari')
 }
-alert(navigator.userAgent)
+alert(navigator.appName)
 
 //alert(navigator.sayswho)

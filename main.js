@@ -1,3 +1,5 @@
+
+// This section is to make the accordion on the main page work
 var acc = document.getElementsByClassName("accordion");
 var i;
 
