@@ -55,7 +55,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 10px;
+    padding-top: 15px;
     /* background: linear-gradient(#eee, #aaa); */
 }
 
@@ -64,7 +64,7 @@ header ul {
     background: rgb(255, 255, 255);
     padding: 8px;
     border-radius: 5px;
-    width: 275px;
+    width: 325px;
     box-shadow: 0 0 12px 3px #555;
 }
 
@@ -73,16 +73,18 @@ header ul {
 }
 
 header ul li {
-    float: left;
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 5px;
 }
 
 header ul li img {
-    width: 53px;
+    width: 64px;
 }
 
 header ul li h1 {
     font-family: 'Coustard', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
     color: #333;
     margin: 0;
 }
@@ -145,13 +147,20 @@ article {
     border-bottom: black solid 3px;
 }
 
-.storeheader {
+/* .storeheader img {
     display: block;
     margin: 0 auto;
-}
+} */
 
 .storeImg {
     height: 125px;
+    float: left;
+    margin-right: 15px;
+}
+
+.write-up {
+    display: inline;
+    vertical-align: top;
 }
 
 .wrapper ul {
