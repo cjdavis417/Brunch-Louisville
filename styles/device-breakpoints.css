@@ -1,91 +1,56 @@
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-  	.image1,
-  	.image2,
-  	.image3 {
-  		background-size: cover;
-    	padding-top: 50%;
-    	background-attachment: scroll;
-    	background-size: 100%;
-    	background-position: center;
-  	}
+@media (min-width: 1150px) {
+	.container {
+		width: 70%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+	.wrapper-main {
+		width: 70%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-  	.image1,
-  	.image2,
-  	.image3 {
-  		background-size: cover;
-    	padding-top: 50%;
-    	background-attachment: scroll;
-    	background-size: 100%;
-    	background-position: center;
-  	}
+@media (max-width: 1150px) {
+	.container {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.wrapper-main {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	/* .wrapper {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		overflow: hidden;
+	} */
+
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-  	.image1,
-  	.image2,
-  	.image3 {
-  		background-size: cover;
-    	padding-top: 50%;
-    	background-attachment: scroll;
-    	background-size: 100%;
-    	background-position: center;
-  	}
-}
+@media (max-width: 525px) {
+	.container {
+		width: 98%;
+		margin: 0 auto;
+	}
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  	.image1,
-  	.image2,
-  	.image3 {
-  		background-size: cover;
-    	padding-top: 50%;
-    	background-attachment: scroll;
-    	background-size: 100%;
-    	background-position: center;
-  	}
-}
+	.title {
+		vertical-align: center;
+	}
 
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px)
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-  	.image1,
-  	.image2,
-  	.image3 {
-  		background-size: cover;
-    	padding-top: 50%;
-    	background-attachment: scroll;
-    	background-size: 100%;
-    	background-position: center;
-  	}
-}
+	.wrapper-main {
+		width: 98%;
+		margin: 0 auto;
+	}
 
-@media only screen 
-    and (max-device-width: 640px), 
-    only screen and (max-device-width: 667px), 
-    only screen and (max-width: 480px) { 
-
-    .image1,
-  	.image2,
-  	.image3 {
-  		background-size: cover;
-    	padding-top: 50%;
-    	background-attachment: scroll;
-    	background-size: 100%;
-    	background-position: center;
-  	}
+	article {
+		align-content: center;
+	}
 }
