@@ -68,11 +68,11 @@ header {
 
 header ul {
     overflow: hidden;
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
     padding: 8px;
-    border-radius: 5px;
-    width: 325px;
-    box-shadow: 0 0 12px 3px #555;
+    /* border-radius: 5px; */
+    width: 100%;
+    /* box-shadow: 0 0 12px 3px #555; */
 }
 
 .title {
@@ -90,10 +90,19 @@ header ul li img {
 }
 
 header ul li h1 {
-    font-family: 'Coustard', sans-serif;
-    font-size: 40px;
-    color: #333;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 90px;
+    color: rgb(230, 230, 230);
     margin: 0;
+    stroke: #333;
+    /* text-shadow: 0 0 10px #333; */
+}
+
+header ul li h1 span {
+    font-size: 40px;
+    color: crimson;
+    text-shadow: 0 0 10px #fff;
+    letter-spacing: 0.001em;
 }
 
 main {
