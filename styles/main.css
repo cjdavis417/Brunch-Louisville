@@ -43,6 +43,12 @@ body {
     margin-top: 10px;
 }
 
+.wrapper-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 /******************
 *   Main Styles   *
 ******************/
@@ -271,8 +277,16 @@ button {
     border: 2px solid #010066;
   }
 
+  .button-restaurant-name {
+      display: inline-flex;
+      padding-left: 3px;
+      padding-right: 3px;
+  }
+
   .button_address {
-      font-size: 18px;
+      display: inline-flex;
+      padding-left: 3px;
+      padding-right: 3px;
   }
 
   .accordion {

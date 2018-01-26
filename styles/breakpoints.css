@@ -53,4 +53,21 @@
 	article {
 		align-content: center;
 	}
+
+	/* button div {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.button_address {
+		display: inline;
+		text-align: center;
+	} */
+
+	.wrapper-button {
+		text-align: center;
+		justify-content: center;
+	}
 }
