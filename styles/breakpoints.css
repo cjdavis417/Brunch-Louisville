@@ -10,6 +10,12 @@
 		max-width: 960px;
 		margin: 0 auto;
 	}
+
+	#form-submit-rest {
+		width: 65%;
+		max-width: 875px;
+		margin: 10 auto;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -25,6 +31,12 @@
 		margin: 0 auto;
 	}
 
+	#form-submit-rest {
+		width: 75%;
+		max-width: 1000px;
+		margin: 10 auto;
+	}
+
 	/* .wrapper {
 		width: 100%;
 		display: flex;
@@ -35,7 +47,7 @@
 
 }
 
-@media (max-width: 525px) {
+@media (max-width: 660px) {
 	.container {
 		width: 98%;
 		margin: 0 auto;
@@ -69,5 +81,10 @@
 	.wrapper-button {
 		text-align: center;
 		justify-content: center;
+	}
+
+	#form-submit-rest {
+		width: 94%;
+		margin: 0 auto;
 	}
 }
