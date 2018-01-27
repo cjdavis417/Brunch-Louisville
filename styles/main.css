@@ -18,12 +18,13 @@ body {
 .container {
     padding-left: 1em;
     padding-right: 1em;
+    position: relative;
 }
 
 /* wraps the articles */
 .wrapper-main {
-    padding-left: 1em;
-    padding-right: 1em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
 }
 
 /* drop down content wrapper */
@@ -62,47 +63,45 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 15px;
     /* background: linear-gradient(#eee, #aaa); */
 }
 
-header ul {
-    overflow: hidden;
-    /* background: rgb(255, 255, 255); */
-    padding: 8px;
-    /* border-radius: 5px; */
-    width: 100%;
-    /* box-shadow: 0 0 12px 3px #555; */
-}
-
-.title {
-    padding: 10px 5px;
-}
-
-header ul li {
-    display: inline-block;
-    padding-left: 3px;
-    padding-right: 5px;
-}
-
-header ul li img {
-    width: 64px;
-}
-
-header ul li h1 {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 90px;
-    color: rgb(230, 230, 230);
+header .pos-brunch {
+    position: absolute;
+    top: 20px;
     margin: 0;
-    stroke: #333;
-    /* text-shadow: 0 0 10px #333; */
 }
 
-header ul li h1 span {
-    font-size: 40px;
-    color: crimson;
-    text-shadow: 0 0 10px #fff;
-    letter-spacing: 0.001em;
+header .pos-louisville {
+    position: absolute;
+    top: 50px;
+}
+
+.svg-header {
+    width: 100%;
+    height: 100px;
+    /* border: solid black 1px; */
+}
+
+.svg-brunch {
+    text-anchor: middle;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 120px;
+    fill: #fff;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+.svg-louisville {
+    text-anchor: middle;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1em;
+    fill: crimson;
+    text-shadow: 0 0 10px #000, -1px -1px #000, 1px 1px #000
+    /* stroke: black;
+    stroke-width: 1px;
+    stroke-linecap: square; */
 }
 
 main {
@@ -111,15 +110,16 @@ main {
 }
 
 nav {
-    margin-top: 10px;
+    width: 100%;
     margin-bottom: 10px;
+    margin-left: 0;
 }
 
 nav ul {
     overflow: hidden;
-    width: 960px;
-    border-bottom: solid #a7a7a7 2px;
+    /* border-bottom: solid #a7a7a7 2px; */
     height: 36px;
+    background: #eeeeea;
 }
 
 nav ul li {
@@ -135,14 +135,18 @@ nav ul li a {
     width: 100%;
     color: #777;
     border-bottom: solid #a7a7a7 2px;
-    border-left: solid #bbb 1px;
-    background: #ddd;
+    border-left: solid #bbb 2px;
+    border-right: solid #eee 2px;
+    background: linear-gradient(#eaeaea, #ccc);
 }
 
 nav ul li a:hover {
     color: #555;
     background: #eee;
-    border-bottom:solid #555 2px;
+    background: linear-gradient(#fff, #cacaca);
+    border-bottom:solid rgb(155, 155, 155) 2px;
+    border-left:solid rgb(155, 155, 155) 2px;
+    border-right:solid #fff 2px;
 }
 
 #shortcut-last-child {
@@ -158,8 +162,8 @@ a.headerlinks:visited {
 }
 
 article {
-    margin: 10px 10px;
-    padding: 10px 0px;
+    margin: 10px 20px;
+    padding: 10px 0;
     border-bottom: black solid 3px;
 }
 

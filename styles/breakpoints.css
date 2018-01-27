@@ -37,6 +37,14 @@
 		margin: 10 auto;
 	}
 
+	.svg-brunch {
+		font-size: 100px;
+	}
+
+	.svg-louisville {
+		font-size: 28px;
+	}
+
 	/* .wrapper {
 		width: 100%;
 		display: flex;
@@ -64,6 +72,14 @@
 
 	article {
 		align-content: center;
+	}
+
+	.svg-brunch {
+		font-size: 65px;
+	}
+
+	.svg-louisville {
+		font-size: 18px;
 	}
 
 	/* button div {

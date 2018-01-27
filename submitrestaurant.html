@@ -3,25 +3,31 @@
 <html>
 <head>
     <title>Restaurant Submission</title>
-    <link href="https://fonts.googleapis.com/css?family=Coustard|lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One|Lato" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/breakpoints.css">
     <!-- <link rel="stylesheet" href="submitRestaurant.css"> -->
 </head>
 <body>
-    <header>
-        <div class="container">
-            <ul class="title">
-                <li><a href="index.html"><img src="img/Fleur.png"></a></li>
-                <li><h1>Brunch<br>Louisville</h1></li>
-            </ul>
-            <a href="index.html">Home</a>
-            <a href="submitrestaurant.html">Submit Restaurant</a>
-        </div>
-    </header>
+        <header>
+                <div class="container">
+                            <svg class="svg-header pos-brunch">
+                                <text x="50%" y="90" class="svg-brunch">Brunch</text>
+                            </svg>
+                            <svg class="svg-header pos-louisville">
+                                <text x="50%" y="90" class="svg-louisville">Louisville</text>
+                            </svg>
+                </div>
+            </header>
 
     <main class="wrapper-main">
+            <nav>
+                    <ul id="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="submitrestaurant.html">Submit Restaurant</a></li>
+                    </ul>
+                </nav>
         <form id="form-submit-rest" action="submitrestaurant.html" method="post">
             <h2 class="formheader">Add Your Restaurant</h2>
 
