@@ -52,7 +52,7 @@ body {
 }
 
 /******************
-*   Main Styles   *
+*  Header Styles  *
 ******************/
 
 header {
@@ -104,10 +104,14 @@ header .pos-louisville {
     stroke-linecap: square; */
 }
 
+/***** Main Body *****/
+
 main {
     font-family: 'Lato', sans-serif;
     background: #fff3db;
 }
+
+/*** navigation ***/
 
 nav {
     width: 100%;
@@ -117,7 +121,6 @@ nav {
 
 nav ul {
     overflow: hidden;
-    /* border-bottom: solid #a7a7a7 2px; */
     height: 36px;
     background: #eeeeea;
 }
@@ -126,6 +129,10 @@ nav ul li {
     float: left;
     margin: 0;
     width: 24%;
+    border-bottom: solid #a7a7a7 2px;
+    border-left: solid #bbb 2px;
+    border-right: solid #eee 2px;
+    background: linear-gradient(#eaeaea, #ccc);
 }
 
 nav ul li a {
@@ -134,10 +141,6 @@ nav ul li a {
     display: block;
     width: 100%;
     color: #777;
-    border-bottom: solid #a7a7a7 2px;
-    border-left: solid #bbb 2px;
-    border-right: solid #eee 2px;
-    background: linear-gradient(#eaeaea, #ccc);
 }
 
 nav ul li a:hover {
@@ -149,28 +152,13 @@ nav ul li a:hover {
     border-right:solid #fff 2px;
 }
 
-#shortcut-last-child {
-    border-right: solid #bbb 1px;
-}
-
-a.headerlinks {
-    color: white
-}
-
-a.headerlinks:visited {
-    color: white;
-}
+/*****  Articles  *****/
 
 article {
     margin: 10px 20px;
     padding: 10px 0;
     border-bottom: black solid 3px;
 }
-
-/* .storeheader img {
-    display: block;
-    margin: 0 auto;
-} */
 
 .storeImg {
     height: 125px;
@@ -181,16 +169,6 @@ article {
 .write-up {
     display: inline;
     vertical-align: top;
-}
-
-.wrapper ul {
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.wrapper ul li {
-    float: left;
 }
 
 .hours {
@@ -226,6 +204,20 @@ tr:hover {
     text-align: right;
 }
 
+#form-submit-rest {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#form-submit-rest formheader {
+    margin: 0 auto;
+}
+
+.textbox-looks {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 footer {
     height: 200px;
     background: url(https://image.freepik.com/free-photo/white-wooden-wall_1154-599.jpg);
@@ -237,10 +229,23 @@ footer {
     text-align: center;
 }
 
-.footerText {
-    vertical-align: middle;
-    background-color: #fff;
+#footerText {
     padding: 10px auto;
+}
+
+#footerText ul li {
+    float: left;
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+#footerText ul li:after {
+    content: "|";
+    margin: 14px;
+}
+
+#copyright{
+    display: block;
 }
 
 .emailLink {
@@ -267,6 +272,7 @@ label {
 label.light {
     font-weight: 300;
     display: inline;
+    margin-left: 5px;
   }
 
 .inputElement {
@@ -282,13 +288,26 @@ table {
 button {
     margin: 10px 0 0 0;
     padding: 15px 35px;
-    background-color: #eee;
+    background: linear-gradient(#eee, #ddd);
     color: #010066;
     font-size: 24px;
     text-align: left;
     font-family: 'Lato', sans-serif;
     width: 100%;
     border: 2px solid #010066;
+  }
+
+  button:hover {
+      background: linear-gradient(#fff, #ccc);
+  }
+
+  #button-submit {
+      text-align: center;
+      cursor: pointer;
+  }
+
+  #button-submit:hover {
+      background: linear-gradient(#fff, #ccc);
   }
 
   .button-restaurant-name {
