@@ -1,4 +1,5 @@
-# This is a project for CodeLouisville classes.
+# Brunch Louisville
+## This is a project for CodeLouisville classes.
 
 Technologies used:
 Flexbox
