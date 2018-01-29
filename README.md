@@ -1,4 +1,4 @@
-This is a project for CodeLouisville classes.
+# This is a project for CodeLouisville classes.
 
 Technologies used:
 Flexbox
