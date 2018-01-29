@@ -3,6 +3,8 @@
 #### This website is to be a one-stop-shop for all the weekend Brunch and Buffet spots in Louisville KY.
 
 1. Technologies used:
+    * HTML5
+    * CSS3
     * Flexbox
     * Javascript
     * Forms
