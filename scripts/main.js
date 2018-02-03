@@ -22,71 +22,56 @@ for (i=0; i<acc.length; i++) {
 // google map stuff
 function initMap() {
     // locations in latitude and longitude
-    var louisville = {lat: 38.2526647, lng: -85.7584557};
-    var ramsisLoc = {lat: 38.235691, lng: -85.715654};
-    var napaGrillLoc = {lat: 38.2682804, lng: -85.6126019};
+    var louisvilleLoc = {lat: 38.2526647, lng: -85.7584557};
     
     // map of louisville
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
         zoomControl: true,
-        center: louisville,
+        center: louisvilleLoc,
         map: map
     });
 
     // this loop goes through the restaurant array and generates markers
     for (var i in restaurants) {
-        createMarkers(restaurants[i].latitude, restaurants[i].longitude);
-    };
 
-    // restaurant markers
-    function createMarkers(lat, lng) {
+        // generates location
+        var location = {lat: restaurants[i].latitude, lng:restaurants[i].longitude};
+
+        //generates marker
         var marker = new google.maps.Marker({
-            position: generateLocation(lat, lng),
+            position: location,
             map: map
+        });
+
+        // generates info window text
+        var infoString = "<h3>" + restaurants[i].name + "</h3>";
+
+        // generates api window object
+        var infoWindow = new google.maps.InfoWindow({
+            content: infoString
+        });
+
+        // creates an infowindow 'key' in the marker
+        marker.infoWindow = infoWindow;
+
+        // generates mouseover listener
+        marker.addListener('mouseover', function() {
+            return this.infoWindow.open(map, this);  
+            // calls the explicit infowindow object
+        });
+
+        // generates mouseout listener
+        marker.addListener('mouseout', function() {
+            return this.infoWindow.close(map, this); 
+            // calls the explicit infowindow object
+        });
+
+        // generates click-zoom listener
+        marker.addListener('click', function() {
+            map.setZoom(19);
+            map.setCenter(this.position);
         });
     };
 
-    function generateLocation(latitude, longitude)  {
-        var location = {lat: latitude, lng: longitude};
-        return location;
-    };
-
-     // info window html
-    //  var ramsiInfoString = "<h3>Ramsi's of the World</h3>";
-    //  var napaGrillInfoString = "<h3>Napa River Grill</h3>";
-
-    // // infowindow variables
-    // var ramsiWindow = new google.maps.InfoWindow({
-    //     content: ramsiInfoString
-    // });
-    // var napaWindow = new google.maps.InfoWindow({
-    //     content: napaGrillInfoString
-    // });
-
-    // // mouseover listeners.  they display the name of the restaurant
-    // ramsiMarker.addListener('mouseover', function() {
-    //     ramsiWindow.open(map, ramsiMarker);
-    // });
-    // napaGrillMarker.addListener('mouseover', function() {
-    //     napaWindow.open(map, napaGrillMarker);
-    // });
-
-    // // mouseout listeners.  closes the information windows
-    // ramsiMarker.addListener('mouseout', function() {
-    //     ramsiWindow.close(map, ramsiMarker);
-    // });
-    // napaGrillMarker.addListener('mouseout', function() {
-    //     napaWindow.close(map. napaGrillMarker);
-    // });
-
-    // // click listeners.  they zoom in on location
-    // ramsiMarker.addListener('click', function() {
-    //     map.setZoom(19);
-    //     map.setCenter(ramsiMarker.getPosition());
-    // });
-    // napaGrillMarker.addListener('click', function() {
-    //     map.setZoom(19);
-    //     map.setCenter(napaGrillMarker.getPosition());
-    // });
 }
