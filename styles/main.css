@@ -122,17 +122,13 @@ nav {
 nav ul {
     overflow: hidden;
     height: 36px;
-    background: #eeeeea;
+    background: linear-gradient(#ddd, #eee);
 }
 
 nav ul li {
     float: left;
     margin: 0;
     width: 24%;
-    border-bottom: solid #a7a7a7 2px;
-    border-left: solid #bbb 2px;
-    border-right: solid #eee 2px;
-    background: linear-gradient(#eaeaea, #ccc);
 }
 
 nav ul li a {
@@ -141,6 +137,10 @@ nav ul li a {
     display: block;
     width: 100%;
     color: #777;
+    border-bottom: solid #a7a7a7 2px;
+    border-left: solid #bbb 2px;
+    border-right: solid #eee 2px;
+    background: linear-gradient(#eaeaea, #ccc);
 }
 
 nav ul li a:hover {
@@ -298,7 +298,7 @@ button {
   }
 
   button:hover {
-      background: linear-gradient(#fff, #ccc);
+      background: linear-gradient(#ccc, #fff);
   }
 
   #button-submit {
@@ -365,4 +365,9 @@ button {
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 100%;
+  }
+
+  #map {
+      height: 400px;
+      width: 100%;
   }
