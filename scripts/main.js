@@ -23,7 +23,7 @@ for (i=0; i<acc.length; i++) {
 function initMap() {
     // locations in latitude and longitude
     var louisvilleLoc = {lat: 38.2526647, lng: -85.7584557};
-    
+
     // map of louisville
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
@@ -54,6 +54,7 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: location,
             map: map,
+            animation: google.maps.Animation.DROP
             // icon: markerIcon,
             // shape: markerShape,
             // zIndex: 102,
@@ -90,6 +91,12 @@ function initMap() {
 
     };
 
+    // ************ Current Problems *****************
+    // * The label of the last item in the           *
+    // * restaurants array is saying 'Me.' insead of * 
+    // * the restaurant name.                        *
+    // **********************************************/
+
     // try HTML5 geolocation
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -99,10 +106,11 @@ function initMap() {
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
+            infoWindow.setContent('<h3 class="markerText">Me.</h3>');
             infoWindow.open(map);
             
             map.setCenter(pos);
+            //return this.infoWindow.open(map, this);
         }, function() {
             handleLocationError(true, infoWindow, map.position);
         });
