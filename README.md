@@ -9,3 +9,5 @@
     * Javascript
     * Forms
     * Responsive Web Design
+    * JQuery-3.3.1
+    * Google Maps API
