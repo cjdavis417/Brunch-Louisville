@@ -1,5 +1,5 @@
 # Brunch Louisville
-## This is a project for CodeLouisville classes.
+## This is a project for [Code Louisville](https://www.codelouisville.org) classes.
 #### This website is to be a one-stop-shop for all the weekend Brunch and Buffet spots in Louisville KY.
 
 1. Technologies used:
