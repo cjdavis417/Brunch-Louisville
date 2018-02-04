@@ -82,18 +82,6 @@
 		font-size: 18px;
 	}
 
-	/* button div {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.button_address {
-		display: inline;
-		text-align: center;
-	} */
-
 	.wrapper-button {
 		text-align: center;
 		justify-content: center;
@@ -102,5 +90,11 @@
 	#form-submit-rest {
 		width: 94%;
 		margin: 0 auto;
+	}
+
+	.locMap.affix {
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 }

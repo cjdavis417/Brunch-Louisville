@@ -29,7 +29,8 @@ function initMap() {
         zoom: 10,
         zoomControl: true,
         center: louisvilleLoc,
-        map: map
+        map: map,
+        // name: 'Louisville'
     });
 
     // this loop goes through the restaurant array and generates markers
@@ -38,14 +39,28 @@ function initMap() {
         // generates location
         var location = {lat: restaurants[i].latitude, lng:restaurants[i].longitude};
 
+        // generates icon
+        // var markerIcon = {
+        //     url: restaurants[i].icon,
+        // };
+
+        // generates icon shape
+        // var markerShape = {
+        //     coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
+        //     type: 'poly',
+        // };
+
         //generates marker
         var marker = new google.maps.Marker({
             position: location,
-            map: map
+            map: map,
+            // icon: markerIcon,
+            // shape: markerShape,
+            // zIndex: 102,
         });
 
         // generates info window text
-        var infoString = "<h3>" + restaurants[i].name + "</h3>";
+        var infoString = "<div class='markerText'><h3>" + restaurants[i].name + "</h3><h4>" + restaurants[i].type + "</h4></div>";
 
         // generates api window object
         var infoWindow = new google.maps.InfoWindow({
@@ -72,6 +87,20 @@ function initMap() {
             map.setZoom(19);
             map.setCenter(this.position);
         });
+
     };
 
-}
+};
+
+
+// jquery to make the map fixed to top when map reaches
+// top while scrolling.  'affix' is a class in the breakpoints.
+var stickyMap = $('.locMap').offset().top;
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > stickyMap) {
+        $('.locMap').addClass('affix');
+    } else {
+        $('.locMap').removeClass('affix');
+    }
+});

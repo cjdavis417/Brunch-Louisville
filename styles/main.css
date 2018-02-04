@@ -371,3 +371,18 @@ button {
       height: 400px;
       width: 100%;
   }
+
+  .markerText {
+      margin: 0;
+  }
+
+  .markerText h3 {
+    margin: 0;
+    border-bottom: solid #aaa 1px;
+  }
+
+  .markerText h4 {
+      margin: 0;
+      padding-top: 2px;
+      color: crimson;
+  }
