@@ -90,7 +90,35 @@ function initMap() {
 
     };
 
-};
+    // try HTML5 geolocation
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            
+            map.setCenter(pos);
+        }, function() {
+            handleLocationError(true, infoWindow, map.position);
+        });
+    } else {
+        // browser doesn't support geolocation
+        handleLocationError(false, infoWindow, map.position);
+    }
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ? 
+                            'Error: The Geolocation service failed.' :
+                            'Error: Your browser doesn\'t support geolocation.');
+    infoWindow.open(map);
+}
 
 
 // jquery to make the map fixed to top when map reaches
