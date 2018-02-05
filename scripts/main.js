@@ -22,7 +22,7 @@ for (i=0; i<acc.length; i++) {
 // google map stuff
 function initMap() {
     // locations in latitude and longitude
-    var louisvilleLoc = {lat: 38.2526647, lng: -85.7584557};
+    var louisvilleLoc = {lat: 38.252665, lng: -85.758456};
 
     // map of louisville
     var map = new google.maps.Map(document.getElementById('map'), {
