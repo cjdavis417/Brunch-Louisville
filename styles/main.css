@@ -160,6 +160,14 @@ article {
     border-bottom: black solid 3px;
 }
 
+h3 {
+    background: orange;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-top: 0;
+}
+
 .storeImg {
     height: 125px;
     float: left;
@@ -220,11 +228,8 @@ tr:hover {
 
 footer {
     height: 200px;
-    background: url(https://image.freepik.com/free-photo/white-wooden-wall_1154-599.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    color: #333;
+    background: linear-gradient(#777, #555);
+    color: #eee;
     padding: 10px;
     text-align: center;
 }
@@ -242,6 +247,13 @@ footer {
 #footerText ul li:after {
     content: "|";
     margin: 14px;
+}
+
+#footerText ul li a:visited,
+#footerText ul li a:active,
+#footerText ul li a {
+    color: #eee;
+    text-decoration: none;
 }
 
 #copyright{
