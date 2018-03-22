@@ -57,7 +57,7 @@ body {
 header {
     margin: 0;
     width: 100%;
-    height: 600px;
+    height: 300px;
     background-image: url(../img/site-ootb/orange-bg.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -70,7 +70,7 @@ header {
     display: block;
     margin: 0 auto;
     width: 60%;
-    padding-top: 100px;
+    padding-top: 65px;
 }
 
 header .pos-brunch {
@@ -111,7 +111,9 @@ header .pos-louisville {
     stroke-linecap: square; */
 }
 
-/***** Main Body *****/
+/*********************
+*      Main Body     *  
+**********************/
 
 main {
     font-family: 'Lato', sans-serif;
@@ -316,92 +318,91 @@ button {
     border: 2px solid #010066;
   }
 
-  button:hover {
-      background: linear-gradient(#ccc, #fff);
-  }
+button:hover {
+    background: linear-gradient(#ccc, #fff);
+}
 
-  #button-submit {
-      text-align: center;
-      cursor: pointer;
-  }
-
-  #button-submit:hover {
-      background: linear-gradient(#fff, #ccc);
-  }
-
-  .button-restaurant-name {
-      display: inline-flex;
-      padding-left: 3px;
-      padding-right: 3px;
-  }
-
-  .button_address {
-      display: inline-flex;
-      padding-left: 3px;
-      padding-right: 3px;
-      font-size: 18px;
-  }
-
-  .accordion {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    outline: none;
-    transition: 0.4s;
-  }
-
-  .active, .accordion:hover {
-      background-color: #ccc;
-  }
-
-  .submitLogo {
-      max-width: 180px;
-  }
-
-  input[type=file] {
-      padding: 10px;
-  }
-
-  fieldset {
-      margin-bottom: 30px;
-      border: none;
-  }
-
-  legend {
-      font-size: 1.4em;
-      margin-bottom: 10px;
-  }
-
-  .number {
-    background-color: #ffe24b;
-    color: #b18d05;
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 4px;
-    line-height: 30px;
+#button-submit {
     text-align: center;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-    border-radius: 100%;
-  }
+    cursor: pointer;
+}
 
-  #map {
-      height: 400px;
-      width: 100%;
-  }
+#button-submit:hover {
+    background: linear-gradient(#fff, #ccc);
+}
 
-  .markerText {
-      margin: 0;
-  }
+.button-restaurant-name {
+    display: inline-flex;
+    padding-left: 3px;
+    padding-right: 3px;
+}
 
-  .markerText h3 {
+.button_address {
+    display: inline-flex;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 18px;
+}
+
+.accordion {
+cursor: pointer;
+padding: 18px;
+width: 100%;
+outline: none;
+transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.submitLogo {
+    max-width: 180px;
+}
+
+input[type=file] {
+    padding: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.number {
+background-color: #ffe24b;
+color: #b18d05;
+height: 30px;
+width: 30px;
+display: inline-block;
+font-size: 0.8em;
+margin-right: 4px;
+line-height: 30px;
+text-align: center;
+text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+border-radius: 100%;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.markerText {
     margin: 0;
-    border-bottom: solid #aaa 1px;
-  }
+}
 
-  .markerText h4 {
-      margin: 0;
-      padding-top: 2px;
-      color: crimson;
-  }
+.markerText h3 {
+margin: 3px;
+}
+
+.markerText h4 {
+    margin: 0;
+    padding-top: 2px;
+    color: crimson;
+}

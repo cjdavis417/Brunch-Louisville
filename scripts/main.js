@@ -16,15 +16,15 @@ for (i=0; i<acc.length; i++) {
     });
 }
 
-//let footer = document.querySelector(DOMstrings.footerDiv).style.color = "tomato";
-
 
 // google map stuff
+// this was built using the google 'how-to'
 function initMap() {
     // locations in latitude and longitude
+    // this loc centers the map on louisville
     var louisvilleLoc = {lat: 38.252665, lng: -85.758456};
 
-    // map of louisville
+    // map of louisville object and options
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
         zoomControl: true,
@@ -39,25 +39,11 @@ function initMap() {
         // generates location
         var location = {lat: restaurants[i].latitude, lng:restaurants[i].longitude};
 
-        // generates icon
-        // var markerIcon = {
-        //     url: restaurants[i].icon,
-        // };
-
-        // generates icon shape
-        // var markerShape = {
-        //     coord: [12,4,216,22,212,74,157,70,184,111,125,67,6,56],
-        //     type: 'poly',
-        // };
-
         //generates marker
         var marker = new google.maps.Marker({
             position: location,
             map: map,
             animation: google.maps.Animation.DROP
-            // icon: markerIcon,
-            // shape: markerShape,
-            // zIndex: 102,
         });
 
         // generates info window text
@@ -98,35 +84,36 @@ function initMap() {
     // **********************************************/
 
     // try HTML5 geolocation
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-            };
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(function(position) {
+//             var pos = {
+//                 lat: position.coords.latitude,
+//                 lng: position.coords.longitude
+//             };
 
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('<h3 class="markerText">Me.</h3>');
-            infoWindow.open(map);
+//             infoWindow.setPosition(pos);
+//             infoWindow.setContent('<h3 class="markerText">Me.</h3>');
+//             infoWindow.open(map);
             
-            map.setCenter(pos);
-            //return this.infoWindow.open(map, this);
-        }, function() {
-            handleLocationError(true, infoWindow, map.position);
-        });
-    } else {
-        // browser doesn't support geolocation
-        handleLocationError(false, infoWindow, map.position);
-    }
+//             map.setCenter(pos);
+//             //return this.infoWindow.open(map, this);
+//         }, function() {
+//             handleLocationError(true, infoWindow, map.position);
+//         });
+//     } else {
+//         // browser doesn't support geolocation
+//         handleLocationError(false, infoWindow, map.position);
+//     }
+
 }
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ? 
-                            'Error: The Geolocation service failed.' :
-                            'Error: Your browser doesn\'t support geolocation.');
-    infoWindow.open(map);
-}
+// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+//     infoWindow.setPosition(pos);
+//     infoWindow.setContent(browserHasGeolocation ? 
+//                             'Error: The Geolocation service failed.' :
+//                             'Error: Your browser doesn\'t support geolocation.');
+//     infoWindow.open(map);
+// }
 
 
 // jquery to make the map fixed to top when map reaches
