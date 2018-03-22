@@ -16,6 +16,10 @@
 		max-width: 875px;
 		margin: 10 auto;
 	}
+
+	#bl-logo {
+		width: 60%;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -45,6 +49,10 @@
 		font-size: 28px;
 	}
 
+	#bl-logo {
+		width: 80%;
+	}
+
 	/* .wrapper {
 		width: 100%;
 		display: flex;
@@ -56,6 +64,7 @@
 }
 
 @media (max-width: 660px) {
+
 	.container {
 		width: 98%;
 		margin: 0 auto;
@@ -72,6 +81,17 @@
 
 	article {
 		align-content: center;
+	}
+
+	.storeImg {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	h3 {
+		display: block;
+		text-align: center;
 	}
 
 	.svg-brunch {
@@ -100,5 +120,13 @@
 
 	nav {
 		margin-bottom: 0;
+	}
+
+	#bl-logo {
+		width: 95%;
+	}
+
+	nav ul li a {
+		font-size: 0.8em
 	}
 }
