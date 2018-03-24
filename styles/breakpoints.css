@@ -53,17 +53,78 @@
 		width: 80%;
 	}
 
-	/* .wrapper {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		overflow: hidden;
-	} */
-
 }
 
 @media (max-width: 660px) {
+
+	.container {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	.title {
+		vertical-align: center;
+	}
+
+	.wrapper-main {
+		width: 98%;
+		margin: 0 auto;
+	}
+
+	article {
+		align-content: center;
+	}
+
+	.storeImg {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	h3 {
+		display: block;
+		text-align: center;
+	}
+
+	.svg-brunch {
+		font-size: 65px;
+	}
+
+	.svg-louisville {
+		font-size: 18px;
+	}
+
+	.wrapper-button {
+		text-align: center;
+		justify-content: center;
+	}
+
+	#form-submit-rest {
+		width: 94%;
+		margin: 0 auto;
+	}
+
+	.locMap.affix {
+		position: fixed;
+		top: 0;
+		width: 98%;
+	}
+
+	nav {
+		margin-bottom: 0;
+	}
+
+	#bl-logo {
+		width: 95%;
+	}
+
+	nav ul li a {
+		font-size: 0.8em
+	}
+}
+
+/**  This media query is for phones and devices **/
+@media only screen and (min-width: 320px) {
 
 	.container {
 		width: 98%;
