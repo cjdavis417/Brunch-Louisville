@@ -86,9 +86,9 @@ var stickyMap = $('.locMap').offset().top;
 $(window).scroll(function() {
     if ($(window).scrollTop() > stickyMap) {
         $('.locMap').addClass('affix');
-        $('#first-restaurant').addClass('.first-restaurant');
+        $('#first-restaurant').addClass('first-restaurant');
     } else {
         $('.locMap').removeClass('affix');
-        $('#first-restaurant').removeClass('.first-restaurant');
+        $('#first-restaurant').removeClass('first-restaurant');
     }
 });
