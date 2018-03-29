@@ -81,7 +81,7 @@ function initMap() {
 
 
 // jquery to make the map fixed to top when map reaches
-// top while scrolling.  'affix' is a class in the breakpoints.
+// top while scrolling.  'affix' is a class in the breakpoints.css file.
 var stickyMap = $('.locMap').offset().top;
 
 $(window).scroll(function() {
