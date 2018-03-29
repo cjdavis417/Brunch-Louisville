@@ -21,7 +21,11 @@
 
         * Javascript for the accordian button is located in main.js line 1.
         * The google maps api uses javascript.  The bulk of it can be found in main.js line 20
-        * In restaurants.js I created an array of objects that holds information about the restaurants.  The name, type (brunch or buffet), longitude and latitude, and its logo jpeg file.
+        * In restaurants.js I created an array of objects that holds information about the restaurants.
+            * name
+            * type (brunch or buffet)
+            * longitude and latitude
+            * logo jpeg file.
 
     * Forms
 
@@ -39,6 +43,6 @@
 
         * The google maps api uses javascript.  The bulk of it can be found in main.js line 20
         * Features
-            * The map centers on Louisville
-            * On Mouseover, a label pops up and gives details about the location.
-            * On Click, the map zooms into the location.
+            1. The map centers on Louisville
+            2. On Mouseover, a label pops up and gives details about the location.
+            3. On Click, the map zooms into the location.
