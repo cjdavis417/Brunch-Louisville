@@ -15,7 +15,9 @@
 
     * **Flexbox**
 
-        In index.html, there are 3 tables that format the business hours and brunch special.  each is within a container and shift around nicely with screen sizes.
+        In index.html, there are 3 tables that format the business hours and brunch special.  each is within a container and shift around nicely with screen sizes.  This feature is within the location buttons for each of the restaurants.
+        * The parent container is .wrapper
+        * The 3 child containers are .hours
 
     * **Javascript**
 
