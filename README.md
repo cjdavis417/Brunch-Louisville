@@ -5,19 +5,19 @@
 #### Please note, this is work in progress.
 
 1. Technologies used:
-    * HTML5
-    * CSS3
+    * **HTML5**
+    * **CSS3**
 
         * There are two CSS files, main.css and breakpoints.css.
         * main.css file has the bulk of the styles outside of media queries.  
         * The media queries are located in the breakpoints.css file.
         * I seperated it because it is clearer and easier for me to organize.
 
-    * Flexbox
+    * **Flexbox**
 
         In index.html, there are 3 tables that format the business hours and brunch special.  each is within a container and shift around nicely with screen sizes.
 
-    * Javascript
+    * **Javascript**
 
         * Javascript for the accordian button is located in main.js line 1.
         * The google maps api uses javascript.  The bulk of it can be found in main.js line 20
@@ -27,19 +27,19 @@
             * longitude and latitude
             * logo jpeg file.
 
-    * Forms
+    * **Forms**
 
         * submitRestaurants.css is a form to submit new restaurants.  It's just the layout right now.
 
-    * Responsive Web Design
+    * **Responsive Web Design**
 
        * The media queries are located in the breakpoints.css file.
 
-    * JQuery-3.3.1
+    * **JQuery-3.3.1**
 
         The map sticks to the top of the screen with scrolling only in the media query on screens 659px and smaller.  The code is located in main.js line 83.
 
-    * Google Maps API
+    * **Google Maps API**
 
         * The google maps api uses javascript.  The bulk of it can be found in main.js line 20
         * Features
